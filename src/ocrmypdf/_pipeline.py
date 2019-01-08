@@ -487,7 +487,7 @@ def rasterize_with_ghostscript(input_file, output_file, log, context):
     pageinfo = get_pageinfo(input_file, context)
 
     colorspaces = ['pngmono', 'pnggray', 'png256', 'png16m']
-    device_idx = 0
+    device_idx = 1
 
     def at_least(cs):
         return max(device_idx, colorspaces.index(cs))
